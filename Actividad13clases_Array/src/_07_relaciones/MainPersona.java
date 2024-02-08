@@ -50,7 +50,19 @@ public class MainPersona {
 		d1 = new  Direccion();
 		d1.ciudad = "New York";
 		p2.direccion = d1;
-		System.out.println(p1.direccion.ciudad);
+		//System.out.println(p1.direccion.ciudad.charAt(0));
+		//p1 = null;
+		p2.direccion.ciudad = "Oklahoma";
+		
+		CuentaBancaria cb2 = new CuentaBancaria();
+		cb2.iban = "PT56";
+		p2.cuentaBancaria = new CuentaBancaria[2];
+		p2.cuentaBancaria[0] = cb2;
+		
+		cb2 = new CuentaBancaria();
+		cb2.iban = "It89";
+		p2.cuentaBancaria[1] = cb2;
+		
 	}
 
 }

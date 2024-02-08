@@ -63,6 +63,9 @@ public class MainPersona {
 		cb2.iban = "It89";
 		p2.cuentaBancaria[1] = cb2;
 		
+		System.out.println(p2.cuentaBancaria[1].iban);
+		System.out.println(p2.cuentaBancaria[1]);
+		
 	}
 
 }

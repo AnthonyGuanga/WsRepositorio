@@ -8,7 +8,6 @@ public class Empresa {
 	String nombre;
 	String nif;
 	Trabajador []listaDeTrabajadores; 
-	Trabajador dni;
 	
 	
 	public Empresa() {
@@ -27,15 +26,12 @@ public class Empresa {
 		return "Empresa [nombre=" + nombre + ", dni=" + nif + ", listaDeTrabajadores="
 				+ Arrays.toString(listaDeTrabajadores) + "]";
 	}
-	
-	public boolean elTrabajador(String trabajador) {
-		for (Trabajador t : listaDeTrabajadores) {
-			if (t.equalsIgnoreCase(trabajador)) {
-				return true;
-			}
-		}
-		return false;
+	public void datosTrabajador() {
+		
+		System.out.println(Arrays.toString(listaDeTrabajadores));
+		
 	}
+	
 	
 	
 	public void listaDeTrabajadores() {
@@ -74,10 +70,13 @@ public class Empresa {
 		return false;
 	}
 	
-	public boolean dniValido(Trabajador t) {
-		if () {
-			
+	public boolean dniValido() {
+		for (Trabajador trabajador : listaDeTrabajadores) {
+			if(!trabajador.devolverDni()){
+				return false;
+			}
 		}
+		return true;
 	}
 	
 	

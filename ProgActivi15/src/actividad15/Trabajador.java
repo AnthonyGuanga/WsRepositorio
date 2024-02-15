@@ -20,7 +20,7 @@ public class Trabajador {
 		this.salario = salario;
 	}
 	
-	public boolean devolverDni( String dni) {
+	public boolean devolverDni( ) {
 		String expresion = "^[a-zA-Z0-9]{9}$"; 
 
         Pattern pattern = Pattern.compile(expresion);

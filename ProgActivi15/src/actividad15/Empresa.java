@@ -8,7 +8,6 @@ public class Empresa {
 	String nombre;
 	String nif;
 	Trabajador []listaDeTrabajadores; 
-	Trabajador dni;
 	
 	
 	public Empresa() {
@@ -27,6 +26,7 @@ public class Empresa {
 		return "Empresa [nombre=" + nombre + ", dni=" + nif + ", listaDeTrabajadores="
 				+ Arrays.toString(listaDeTrabajadores) + "]";
 	}
+
 	
 	public void elTrabajador(Trabajador lisTrabajador) {
 		for (Trabajador trabajador : listaDeTrabajadores) {
@@ -35,9 +35,23 @@ public class Empresa {
 	}
 	
 	
-	public void listaDeTrabajadores(Trabajador dni) {
+	//public void listaDeTrabajadores(Trabajador dni) {
 		
 		
+
+	public void datosTrabajador() {
+		
+		System.out.println(Arrays.toString(listaDeTrabajadores));
+		
+	}
+	
+	
+	/*
+	public void listaDeTrabajadores() {
+		for (Trabajador listrabajadores : listaDeTrabajadores) {
+			System.out.println(listrabajadores);
+		}
+>>>>>>> 40545146950e68bb8dad7850a4421f66fc3b0f3e
 	}
 	
 	
@@ -70,11 +84,21 @@ public class Empresa {
 		return false;
 	}
 	
+<<<<<<< HEAD
 	/*public boolean dniValido(Trabajador t) {
 	    if (this.dni.equalsIgnoreCase(t.dni) && devolver(t)) {
 	        return true;
 	    }
 	    return false;
+=======
+	public boolean dniValido() {
+		for (Trabajador trabajador : listaDeTrabajadores) {
+			if(!trabajador.devolverDni()){
+				return false;
+			}
+		}
+		return true;
+>>>>>>> 40545146950e68bb8dad7850a4421f66fc3b0f3e
 	}
 */
 	

@@ -28,20 +28,16 @@ public class Empresa {
 				+ Arrays.toString(listaDeTrabajadores) + "]";
 	}
 	
-	public boolean elTrabajador(String trabajador) {
-		for (Trabajador t : listaDeTrabajadores) {
-			if (t.equalsIgnoreCase(trabajador)) {
-				return true;
-			}
+	public void elTrabajador(Trabajador lisTrabajador) {
+		for (Trabajador trabajador : listaDeTrabajadores) {
+			System.out.println(trabajador);
 		}
-		return false;
 	}
 	
 	
-	public void listaDeTrabajadores() {
-		for (Trabajador listrabajadores : listaDeTrabajadores) {
-			System.out.println(listrabajadores);
-		}
+	public void listaDeTrabajadores(Trabajador dni) {
+		
+		
 	}
 	
 	
@@ -74,11 +70,13 @@ public class Empresa {
 		return false;
 	}
 	
-	public boolean dniValido(Trabajador t) {
-		if () {
-			
-		}
+	/*public boolean dniValido(Trabajador t) {
+	    if (this.dni.equalsIgnoreCase(t.dni) && devolver(t)) {
+	        return true;
+	    }
+	    return false;
 	}
+*/
 	
 	
 	

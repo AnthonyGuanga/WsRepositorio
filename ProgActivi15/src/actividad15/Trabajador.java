@@ -30,9 +30,9 @@ public class Trabajador {
 	}
 	
 	
-	public boolean ganaMas() {
-		return ganaMas();
-	}
+	//public Trabajador ganaMas(String t) {
+		
+	//}
 	/*public int ganaMasTrabajador(String salariotra){
 		for ( iterable_element : iterable) {
 			

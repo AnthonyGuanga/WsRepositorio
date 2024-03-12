@@ -8,7 +8,7 @@ public class PlacaBase {
 	
 	@Override
 	public String toString() {
-		return "PlacaBase [marca=" + marca + ", precio=" + precio + ", tipo=" + tipo + "]";
+		return "PlacaBase marca = " + marca + " precio = " + precio + " tipo = " + tipo;
 	}
 	
 	

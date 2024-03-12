@@ -10,7 +10,7 @@ public class Periferico {
 	
 	@Override
 	public String toString() {
-		return "Periferico [tipo=" + tipo + ", marca=" + marca + ", precio=" + precio + "]";
+		return "\r\tPeriferico tipo = " + tipo + " marca = " + marca + " precio = " + precio;
 	}
 	
 	

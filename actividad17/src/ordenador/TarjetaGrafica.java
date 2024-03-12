@@ -9,8 +9,8 @@ public class TarjetaGrafica {
 	
 	@Override
 	public String toString() {
-		return "TarjetaGrafica [marca=" + marca + ", modelo=" + modelo + ", nucleosCuda=" + nucleosCuda + ", precio="
-				+ precio + ", ram=" + ram + "]";
+		return "TarjetaGrafica marca = " + marca + " modelo = " + modelo + " nucleosCuda = " + nucleosCuda + " precio = "
+				+ precio + " ram = " + ram ;
 	}
 	
 	

@@ -9,8 +9,8 @@ public class Procesador {
 	
 	@Override
 	public String toString() {
-		return "Procesador [marca=" + marca + ", modelo=" + modelo + ", numeroNucleos=" + numeroNucleos + ", precio="
-				+ precio + "]";
+		return "Procesador marca = " + marca + "modelo = " + modelo + " numeroNucleos = " + numeroNucleos + " precio = "
+				+ precio ;
 	}
 	
 	public Procesador() {

@@ -8,7 +8,7 @@ public class RAM {
 	
 	@Override
 	public String toString() {
-		return "RAM [marca=" + marca + ", capacidad=" + capacidad + ", precio=" + precio + "]";
+		return "\r\tRAM marca = " + marca + " capacidad = " + capacidad + " precio = " + precio ;
 	}
 	
 	

@@ -27,8 +27,11 @@ public class Ordenador {
 
 	@Override
 	public String toString() {
-		return "Usuario [precio=" + precio + ", procesador=" + procesador + ", placaBase=" + placaBase + ", listaRAMs="
-				+ listaRAMs + ", listaPerifericos=" + listaPerifericos + "]";
+		return  "\rUsuario precio = " + precio + "\r"+
+				"procesador = " + procesador + "\r"+
+				"placaBase = " + placaBase + "\r"+
+				"listaRAMs = "+ listaRAMs + "\r"+
+				"listaPerifericos = " + listaPerifericos;
 	}
 
 	
@@ -80,16 +83,26 @@ public class Ordenador {
 		this.listaPerifericos = listaPerifericos;
 	}
 
+	/**
+	 * Esto es JavaDoc y sirve para la dicumentacion
+	 * calcular el precio de ordenador basandose en los precios
+	 * de los componentes del mismo. modifica el atributo
+	 * 
+	 * @throws NULLPoinTerException si
+	 */
+	
+	
 	public void calcularPrecio() {
 		this.precio = this.precio+ procesador.getPrecio()+ placaBase.getPrecio() +
 				tarjetaGrafica.getPrecio();
 		
 		for (Periferico periferico : listaPerifericos) {
-			this.precio = this.precio + periferico.getPrecio();
+			this.precio = this.precio += periferico.getPrecio();
 		}
 		for (RAM ram : listaRAMs) {
-			this.precio = this.precio + ram.getPrecio();
+			this.precio = this.precio += ram.getPrecio();
 		}
+		
 		
 	}
 	
